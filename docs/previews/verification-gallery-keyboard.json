@@ -1,0 +1,56 @@
+[
+  {
+    "check": "filter",
+    "cards": 1,
+    "focus": "Sitting room",
+    "room": "Sitting room",
+    "viewerOpen": false
+  },
+  {
+    "check": "filter",
+    "cards": 1,
+    "focus": "Kitchen",
+    "room": "Kitchen",
+    "viewerOpen": false
+  },
+  {
+    "check": "filter",
+    "cards": 1,
+    "focus": "Bedroom",
+    "room": "Bedroom",
+    "viewerOpen": false
+  },
+  {
+    "check": "filter",
+    "cards": 3,
+    "focus": "All rooms",
+    "room": "All rooms",
+    "viewerOpen": false
+  },
+  {
+    "check": "viewer-open",
+    "cards": 3,
+    "focus": "Close image",
+    "room": "All rooms",
+    "viewerOpen": true
+  },
+  {
+    "check": "viewer-reverse-tab",
+    "cards": 3,
+    "focus": "Spacejoy / Unsplash",
+    "room": "All rooms",
+    "viewerOpen": true
+  },
+  {
+    "check": "reopen-image",
+    "title": "Timber kitchen",
+    "loaded": true,
+    "status": "loaded"
+  },
+  {
+    "check": "reopen-image",
+    "title": "Linen bedroom",
+    "loaded": true,
+    "status": "loaded"
+  }
+]

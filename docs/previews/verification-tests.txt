@@ -1,0 +1,46 @@
+
+> oriel-and-reed@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ shared validation trims input, supports Unicode and enforces both length boundaries (1.230917ms)
+✔ successful and concurrent retried requests persist one private receipt (33.104875ms)
+✔ invalid bodies, unknown fields and unsafe request IDs never save a receipt (14.394416ms)
+✔ only same-origin loopback JSON POST requests are accepted (3.820167ms)
+✔ chunked bodies are bounded without relying on Content-Length (2.218375ms)
+✔ an unfinished body expires and never creates a receipt (5001.541458ms)
+✔ an interrupted upload saves nothing and leaves the endpoint usable (55.969459ms)
+12:22:23 AM [vite] (client) Re-optimizing dependencies because vite config has changed
+The request id "<project-root>/.local/consultations/691898e1-5e04-4f47-8c47-0f00cad24a7a.json" is outside of Vite serving allow list.
+
+- <project-root>
+
+Refer to docs https://vite.dev/config/server-options.html#server-fs-allow for configurations and more details.
+
+The request id "<project-root>/.local/consultations/691898e1-5e04-4f47-8c47-0f00cad24a7a.json" is outside of Vite serving allow list.
+The request id "<project-root>/.local/consultations/691898e1-5e04-4f47-8c47-0f00cad24a7a.json" is outside of Vite serving allow list.
+The request id "<project-root>/.local/consultations/691898e1-5e04-4f47-8c47-0f00cad24a7a.json" is outside of Vite serving allow list.
+✔ private receipts cannot be read through Vite, encoded paths or raw queries (74.097ms)
+✔ storage failure and deliberate test rejection never acknowledge success (3.589958ms)
+✔ the local endpoint limits repeated attempts (13.452ms)
+✔ Vite keeps receipts in its protected folder even if an outbox override is supplied (12.117375ms)
+✔ each route has a descriptive document title (16.285333ms)
+✔ project headings follow the page or section heading (3.570125ms)
+✔ Projects prioritizes its first visible image while home previews remain lazy (3.378083ms)
+✔ home has one heading, an accessible room image and real navigation targets (1.407625ms)
+✔ contact has a labelled local-demo form and the closing invitation links to it (2.616292ms)
+✔ unknown paths do not silently display the homepage (1.702625ms)
+✔ home and project index link to all three clearly labelled concepts (3.788375ms)
+✔ project filters expose their selection and keep image buttons separate from detail links (2.260792ms)
+✔ each detail page offers its reference image in the accessible viewer (1.816ms)
+✔ the viewer names its image and credit and requests no image while closed (0.439417ms)
+✔ each concept has a distinct detail page with an honest brief and image credit (2.044125ms)
+✔ all rendered project image variants exist locally (4.384791ms)
+✔ home and studio explain the services and ordered consultation process (4.344667ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5372.270875

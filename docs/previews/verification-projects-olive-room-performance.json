@@ -1,0 +1,304 @@
+{
+ "page": "http://127.0.0.1:5176/projects/olive-room",
+ "partial": false,
+ "results": [
+  {
+   "w": 1440,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "10/9 %",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "total transfer",
+     "value": "412.7 KiB",
+     "verdict": "PASS",
+     "note": "html 1.2K  css 4.2K  js 65K  font 49.2K  img 291.5K  other 1.6K"
+    },
+    {
+     "name": "requests",
+     "value": 8,
+     "verdict": "PASS",
+     "note": "7 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "291.5 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "largest image",
+     "value": "291.5 KiB",
+     "verdict": "PASS",
+     "note": "images/olive-room-1920.webp"
+    },
+    {
+     "name": "JS parsed",
+     "value": "208.6 KiB",
+     "verdict": "PASS",
+     "note": "1 files, 65K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "4.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "font families",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "Bodoni Moda, Hanken Grotesk"
+    },
+    {
+     "name": "font files",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "49.2K"
+    },
+    {
+     "name": "font bytes",
+     "value": "49.2 KiB",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "runs 3, 0..0, max 0ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "0 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 0..0 ms; at load 0ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "40 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 36..40"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "40 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 36..40, img.project-image"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 3, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "2 screens",
+     "verdict": "PASS",
+     "note": "DOM 76 nodes"
+    }
+   ]
+  },
+  {
+   "w": 390,
+   "rows": [
+    {
+     "name": "host CPU load (before/after)",
+     "value": "10/9 %",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "total transfer",
+     "value": "172.9 KiB",
+     "verdict": "PASS",
+     "note": "html 1.2K  css 4.2K  js 65K  font 49.2K  img 52.2K  other 1.2K"
+    },
+    {
+     "name": "requests",
+     "value": 7,
+     "verdict": "PASS",
+     "note": "6 by load"
+    },
+    {
+     "name": "images bytes",
+     "value": "52.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "largest image",
+     "value": "52.2 KiB",
+     "verdict": "PASS",
+     "note": "images/olive-room-640.webp"
+    },
+    {
+     "name": "JS parsed",
+     "value": "208.6 KiB",
+     "verdict": "PASS",
+     "note": "1 files, 65K gz"
+    },
+    {
+     "name": "CSS",
+     "value": "4.2 KiB",
+     "verdict": "PASS",
+     "note": "1 files"
+    },
+    {
+     "name": "font families",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "Bodoni Moda, Hanken Grotesk"
+    },
+    {
+     "name": "font files",
+     "value": 2,
+     "verdict": "PASS",
+     "note": "49.2K"
+    },
+    {
+     "name": "font bytes",
+     "value": "49.2 KiB",
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "images without width+height",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "below-fold images not lazy",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "oversized images (natural > 2.2x shown)",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at load",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL live at bottom",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "WebGL peak live",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "0 contexts made in all"
+    },
+    {
+     "name": "long tasks",
+     "value": 0,
+     "verdict": "PASS",
+     "note": "runs 3, 0..0, max 0ms"
+    },
+    {
+     "name": "blocking time",
+     "value": "0 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 0..0 ms; at load 0ms"
+    },
+    {
+     "name": "FCP (CPU, relative)",
+     "value": "32 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 32..32"
+    },
+    {
+     "name": "LCP (CPU, relative)",
+     "value": "32 ms",
+     "verdict": "PASS",
+     "note": "runs 3, 32..40, img.project-image"
+    },
+    {
+     "name": "layout shift",
+     "value": "0.000",
+     "verdict": "PASS",
+     "note": "runs 3, 0.000..0.000; at load 0.000"
+    },
+    {
+     "name": "modules loaded, never mounted",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "broken requests",
+     "value": 0,
+     "verdict": "PASS",
+     "note": ""
+    },
+    {
+     "name": "page height",
+     "value": "1.6 screens",
+     "verdict": "PASS",
+     "note": "DOM 76 nodes"
+    }
+   ]
+  }
+ ]
+}

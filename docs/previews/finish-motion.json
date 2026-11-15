@@ -1,0 +1,379 @@
+{
+  "desktopStart": {
+    "hero": {
+      "eligible": true,
+      "frames": [
+        {
+          "animation": "hero-title-recede",
+          "layoutHeight": 237,
+          "layoutWidth": 1310,
+          "selector": ".hero-title",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "animation": "hero-image-open",
+          "layoutHeight": 582,
+          "layoutWidth": 1310,
+          "selector": ".hero-image",
+          "transform": "matrix(0.97, 0, 0, 0.97, 0, 0)"
+        }
+      ],
+      "scrollY": 0
+    },
+    "sections": [
+      {
+        "eligible": true,
+        "height": 182,
+        "text": "Our approachA home, room by room.",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 623
+      },
+      {
+        "eligible": true,
+        "height": 136,
+        "text": "Selected conceptsFictional room studies, illustrated wi",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 1310
+      },
+      {
+        "eligible": true,
+        "height": 454,
+        "text": "Design servicesChoose help with a layout, a room scheme",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 510
+      },
+      {
+        "eligible": true,
+        "height": 191,
+        "text": "From conversation to a plan.A shared brief comes first.",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 1310
+      },
+      {
+        "eligible": true,
+        "height": 199,
+        "text": "01Talk through the spaceShare how you use the room, wha",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 405
+      },
+      {
+        "eligible": true,
+        "height": 199,
+        "text": "02Agree the directionReview the brief, a layout and mat",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 405
+      },
+      {
+        "eligible": true,
+        "height": 199,
+        "text": "03Review the proposalLook through the room scheme and s",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 405
+      },
+      {
+        "eligible": true,
+        "height": 190,
+        "text": "Have a room in mind?",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 599
+      },
+      {
+        "eligible": true,
+        "height": 131,
+        "text": "Tell us what you would like to change. Start with a few",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 567
+      }
+    ]
+  },
+  "desktopScrolled": {
+    "hero": {
+      "eligible": true,
+      "frames": [
+        {
+          "animation": "hero-title-recede",
+          "layoutHeight": 237,
+          "layoutWidth": 1310,
+          "selector": ".hero-title",
+          "transform": "matrix(0.98, 0, 0, 0.98, 0, -8)"
+        },
+        {
+          "animation": "hero-image-open",
+          "layoutHeight": 582,
+          "layoutWidth": 1310,
+          "selector": ".hero-image",
+          "transform": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "scrollY": 900
+    },
+    "sections": [
+      {
+        "eligible": true,
+        "height": 182,
+        "text": "Our approachA home, room by room.",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "width": 623
+      },
+      {
+        "eligible": true,
+        "height": 136,
+        "text": "Selected conceptsFictional room studies, illustrated wi",
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "width": 1310
+      },
+      {
+        "eligible": true,
+        "height": 454,
+        "text": "Design servicesChoose help with a layout, a room scheme",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 510
+      },
+      {
+        "eligible": true,
+        "height": 191,
+        "text": "From conversation to a plan.A shared brief comes first.",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 1310
+      },
+      {
+        "eligible": true,
+        "height": 199,
+        "text": "01Talk through the spaceShare how you use the room, wha",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 405
+      },
+      {
+        "eligible": true,
+        "height": 199,
+        "text": "02Agree the directionReview the brief, a layout and mat",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 405
+      },
+      {
+        "eligible": true,
+        "height": 199,
+        "text": "03Review the proposalLook through the room scheme and s",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 405
+      },
+      {
+        "eligible": true,
+        "height": 190,
+        "text": "Have a room in mind?",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 599
+      },
+      {
+        "eligible": true,
+        "height": 131,
+        "text": "Tell us what you would like to change. Start with a few",
+        "transform": "matrix(1, 0, 0, 1, 0, 8)",
+        "width": 567
+      }
+    ]
+  },
+  "desktopReturned": [
+    {
+      "eligible": true,
+      "height": 182,
+      "text": "Our approachA home, room by room.",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 623
+    },
+    {
+      "eligible": true,
+      "height": 136,
+      "text": "Selected conceptsFictional room studies, illustrated wi",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 1310
+    },
+    {
+      "eligible": true,
+      "height": 454,
+      "text": "Design servicesChoose help with a layout, a room scheme",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 510
+    },
+    {
+      "eligible": true,
+      "height": 191,
+      "text": "From conversation to a plan.A shared brief comes first.",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 1310
+    },
+    {
+      "eligible": true,
+      "height": 199,
+      "text": "01Talk through the spaceShare how you use the room, wha",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 405
+    },
+    {
+      "eligible": true,
+      "height": 199,
+      "text": "02Agree the directionReview the brief, a layout and mat",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 405
+    },
+    {
+      "eligible": true,
+      "height": 199,
+      "text": "03Review the proposalLook through the room scheme and s",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 405
+    },
+    {
+      "eligible": true,
+      "height": 190,
+      "text": "Have a room in mind?",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 599
+    },
+    {
+      "eligible": true,
+      "height": 131,
+      "text": "Tell us what you would like to change. Start with a few",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 567
+    }
+  ],
+  "mobile": {
+    "hero": {
+      "eligible": false,
+      "frames": [
+        {
+          "animation": "none",
+          "layoutHeight": 72,
+          "layoutWidth": 350,
+          "selector": ".hero-title",
+          "transform": "none"
+        },
+        {
+          "animation": "none",
+          "layoutHeight": 438,
+          "layoutWidth": 350,
+          "selector": ".hero-image",
+          "transform": "none"
+        }
+      ],
+      "scrollY": 0
+    },
+    "sections": [
+      {
+        "eligible": false,
+        "height": 128,
+        "text": "Our approachA home, room by room.",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 177,
+        "text": "Selected conceptsFictional room studies, illustrated wi",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 122,
+        "text": "Design servicesChoose help with a layout, a room scheme",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 188,
+        "text": "From conversation to a plan.A shared brief comes first.",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 189,
+        "text": "01Talk through the spaceShare how you use the room, wha",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 189,
+        "text": "02Agree the directionReview the brief, a layout and mat",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 189,
+        "text": "03Review the proposalLook through the room scheme and s",
+        "transform": "none",
+        "width": 350
+      },
+      {
+        "eligible": false,
+        "height": 106,
+        "text": "Have a room in mind?",
+        "transform": "none",
+        "width": 333
+      },
+      {
+        "eligible": false,
+        "height": 125,
+        "text": "Tell us what you would like to change. Start with a few",
+        "transform": "none",
+        "width": 350
+      }
+    ]
+  },
+  "studio": [
+    {
+      "eligible": true,
+      "height": 454,
+      "text": "Design servicesChoose help with a layout, a room scheme",
+      "transform": "matrix(1, 0, 0, 1, 0, 2.22298)",
+      "width": 510
+    },
+    {
+      "eligible": true,
+      "height": 191,
+      "text": "From conversation to a plan.A shared brief comes first.",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 1310
+    },
+    {
+      "eligible": true,
+      "height": 199,
+      "text": "01Talk through the spaceShare how you use the room, wha",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 405
+    },
+    {
+      "eligible": true,
+      "height": 199,
+      "text": "02Agree the directionReview the brief, a layout and mat",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 405
+    },
+    {
+      "eligible": true,
+      "height": 199,
+      "text": "03Review the proposalLook through the room scheme and s",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 405
+    },
+    {
+      "eligible": true,
+      "height": 190,
+      "text": "Have a room in mind?",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 599
+    },
+    {
+      "eligible": true,
+      "height": 131,
+      "text": "Tell us what you would like to change. Start with a few",
+      "transform": "matrix(1, 0, 0, 1, 0, 8)",
+      "width": 567
+    }
+  ]
+}

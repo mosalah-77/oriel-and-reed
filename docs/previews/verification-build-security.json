@@ -1,0 +1,23 @@
+{
+  "builtFiles": 20,
+  "serverReceiptsTestsAndAxeAbsent": true,
+  "contrastOnPaper": {
+    "ink": 13.14,
+    "muted": 4.94,
+    "olive": 6.58
+  },
+  "assets": [
+    {
+      "file": "dist/assets/index-CrTqWZa-.js",
+      "bytes": 213637,
+      "gzipBytes": 65988,
+      "sha256": "2cbfac3e4c17185a6cbe89ee51e834d3fc2b5c32fdfad5e5726cd13cc59c5379"
+    },
+    {
+      "file": "dist/assets/index-DSaixDef.css",
+      "bytes": 15939,
+      "gzipBytes": 3929,
+      "sha256": "558709ca867cc7d7c66e066ef6b4b5a5a460681d42c33a9e79c24783caa77f2e"
+    }
+  ]
+}

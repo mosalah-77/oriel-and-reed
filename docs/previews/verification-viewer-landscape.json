@@ -1,0 +1,28 @@
+{
+  "background": "rgb(243, 240, 232)",
+  "caption": "rgb(101, 105, 94)",
+  "close": {
+    "bottom": 98,
+    "height": 44,
+    "left": 688.171875,
+    "right": 796,
+    "top": 54,
+    "width": 107.828125,
+    "x": 688.171875,
+    "y": 54
+  },
+  "dialog": {
+    "bottom": 360,
+    "height": 330,
+    "left": 24,
+    "right": 820,
+    "top": 30,
+    "width": 796,
+    "x": 24,
+    "y": 30
+  },
+  "height": 390,
+  "overflow": false,
+  "title": "rgb(37, 40, 32)",
+  "width": 844
+}

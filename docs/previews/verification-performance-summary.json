@@ -1,0 +1,128 @@
+[
+  {
+    "page": "http://127.0.0.1:5176/contact",
+    "width": 1440,
+    "transfer": "121.2 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/contact",
+    "width": 390,
+    "transfer": "120.7 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/",
+    "width": 1440,
+    "transfer": "753.7 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/",
+    "width": 390,
+    "transfer": "290.2 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects/linen-bedroom",
+    "width": 1440,
+    "transfer": "345.1 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects/linen-bedroom",
+    "width": 390,
+    "transfer": "152.7 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects/olive-room",
+    "width": 1440,
+    "transfer": "412.7 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects/olive-room",
+    "width": 390,
+    "transfer": "172.9 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects",
+    "width": 1440,
+    "transfer": "469.6 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects",
+    "width": 390,
+    "transfer": "229.8 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects/timber-kitchen",
+    "width": 1440,
+    "transfer": "312.8 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/projects/timber-kitchen",
+    "width": 390,
+    "transfer": "145.7 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/studio",
+    "width": 1440,
+    "transfer": "121.2 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  },
+  {
+    "page": "http://127.0.0.1:5176/studio",
+    "width": 390,
+    "transfer": "120.7 KiB",
+    "CLS": "0.000",
+    "longTasks": 0,
+    "broken": 0,
+    "flags": []
+  }
+]

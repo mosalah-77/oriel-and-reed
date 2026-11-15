@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Image viewer checks</title></head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import React, { StrictMode, useState } from 'react';
+      import { createRoot } from 'react-dom/client';
+      import ImageViewer from '/src/ImageViewer.tsx';
+      import { projects } from '/src/projects.ts';
+      import '/src/styles.css';
+      const missing = { ...projects[0], title: 'Missing test image', slug: 'missing-test-image' };
+      function ViewerCheck() {
+        const [selected, setSelected] = useState(null);
+        return React.createElement(React.Fragment, null,
+          React.createElement('h1', null, 'Image viewer checks'),
+          React.createElement('button', { type: 'button', onClick: () => setSelected(missing) }, 'Open missing image'),
+          React.createElement(ImageViewer, { project: selected, onClose: () => setSelected(null) }));
+      }
+      createRoot(document.getElementById('root')).render(React.createElement(StrictMode, null, React.createElement(ViewerCheck)));
+    </script>
+  </body>
+</html>

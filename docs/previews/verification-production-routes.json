@@ -1,0 +1,77 @@
+{
+  "pages": [
+    {
+      "route": "/",
+      "h1": "Oriel & Reed",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Interior design studio | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/projects",
+      "h1": "Project concepts",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Project concepts | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/studio",
+      "h1": "Services & approach",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Services & approach | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/contact",
+      "h1": "Tell us about your space.",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Contact | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/projects/olive-room",
+      "h1": "Olive sitting room",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Olive sitting room | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/projects/timber-kitchen",
+      "h1": "Timber kitchen",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Timber kitchen | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/projects/linen-bedroom",
+      "h1": "Linen bedroom",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Linen bedroom | Oriel & Reed",
+      "titleCount": 1
+    },
+    {
+      "route": "/missing-page",
+      "h1": "Page not found",
+      "h1Count": 1,
+      "headerHeight": "72px",
+      "overflow": false,
+      "title": "Page not found | Oriel & Reed",
+      "titleCount": 1
+    }
+  ],
+  "logs": []
+}

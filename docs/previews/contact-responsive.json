@@ -1,0 +1,42 @@
+[
+  {
+    "columns": "280px",
+    "fieldColumns": "280px",
+    "h1": 1,
+    "inputSize": "16px",
+    "overflow": false,
+    "width": 320
+  },
+  {
+    "columns": "350px",
+    "fieldColumns": "350px",
+    "h1": 1,
+    "inputSize": "16px",
+    "overflow": false,
+    "width": 390
+  },
+  {
+    "columns": "728px",
+    "fieldColumns": "728px",
+    "h1": 1,
+    "inputSize": "16px",
+    "overflow": false,
+    "width": 768
+  },
+  {
+    "columns": "430.078px 430.086px",
+    "fieldColumns": "205.039px 205.047px",
+    "h1": 1,
+    "inputSize": "16px",
+    "overflow": false,
+    "width": 1024
+  },
+  {
+    "columns": "604.805px 604.805px",
+    "fieldColumns": "292.398px 292.406px",
+    "h1": 1,
+    "inputSize": "16px",
+    "overflow": false,
+    "width": 1440
+  }
+]

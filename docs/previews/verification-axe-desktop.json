@@ -1,0 +1,82 @@
+[
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/projects",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/studio",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/contact",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/projects/olive-room",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/projects/timber-kitchen",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/projects/linen-bedroom",
+    "violations": [],
+    "width": 1440
+  },
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [],
+    "path": "/missing-page",
+    "violations": [],
+    "width": 1440
+  }
+]

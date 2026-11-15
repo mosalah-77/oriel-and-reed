@@ -1,0 +1,25 @@
+{
+  "pending": {
+    "disabled": true,
+    "status": "Saving your request to the local test server."
+  },
+  "saved": {
+    "focus": "Test request saved.",
+    "form": false,
+    "success": "Test request saved."
+  },
+  "receiptPermissions": "0600",
+  "newReceipts": 1,
+  "rejection": {
+    "disabled": false,
+    "failure": "We could not confirm that your test request was saved. Your details are still here. Please try again.",
+    "message": "Verification loop: a fictional sitting room layout for reading.",
+    "success": false
+  },
+  "timeout": {
+    "disabled": false,
+    "failure": "We could not confirm that your test request was saved. Your details are still here. Please try again.",
+    "message": "Verification loop: a fictional sitting room layout for reading.",
+    "success": false
+  }
+}

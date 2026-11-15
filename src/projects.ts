@@ -1,0 +1,43 @@
+export const projects = [
+  {
+    slug: 'olive-room',
+    title: 'Olive sitting room',
+    room: 'Sitting room',
+    summary: 'An olive sofa and a reading chair beside the afternoon light.',
+    brief: 'Plan a sitting room for reading and conversation, with enough open floor space to move between the seats.',
+    direction: 'Group a sofa and one armchair around a low table. Keep the route through the room clear, and put a reading lamp beside the seat that gets the least daylight.',
+    materials: 'Olive upholstery, warm timber and a textured wool rug. A pale wall keeps the darker furniture from making the room feel heavy.',
+    alt: 'An olive sofa and timber armchair around a low coffee table, with framed artwork and plants.',
+    creator: 'Spacejoy',
+    imageType: 'image',
+    source: 'https://unsplash.com/photos/a-living-room-with-a-green-couch-and-a-coffee-table-0JGRXomKXSw',
+  },
+  {
+    slug: 'timber-kitchen',
+    title: 'Timber kitchen',
+    room: 'Kitchen',
+    summary: 'Wood-fronted storage and dark worktops, arranged around a generous window.',
+    brief: 'Explore a compact kitchen where preparation space, storage and daylight can share a narrow footprint.',
+    direction: 'Place tall storage along one wall and keep everyday utensils close to the worktop. Before specifying an island, check that doors can open fully and there is room to pass behind someone cooking.',
+    materials: 'Timber veneer, a dark worktop and simple handles. Choose finishes that can be wiped clean and samples that work together in daylight.',
+    alt: 'A kitchen render with timber cabinets, a dark island worktop and a window with wooden blinds.',
+    creator: 'Ali Moradi',
+    imageType: 'render',
+    source: 'https://unsplash.com/photos/a-kitchen-with-a-large-window-and-wooden-cabinets-ob90UT48vu4',
+  },
+  {
+    slug: 'linen-bedroom',
+    title: 'Linen bedroom',
+    room: 'Bedroom',
+    summary: 'Soft green walls, layered textiles and warm light beside the bed.',
+    brief: 'Create a bedroom concept with a clear place to put a book, lighting within reach and room to move on both sides of the bed.',
+    direction: 'Start with the bed position and the paths to the door and window. Use wall lights to leave the bedside surfaces free, then bring color into the bedding and a small group of prints.',
+    materials: 'Washed linen, soft green paint and woven shades. A rust-colored cushion adds warmth without changing the whole palette.',
+    alt: 'A bed with green and cream bedding, rust-colored cushions, woven lighting and plants.',
+    creator: 'Spacejoy',
+    imageType: 'image',
+    source: 'https://unsplash.com/photos/white-bed-with-gray-and-white-bed-linen-nEtpvJjnPVo',
+  },
+];
+
+export type Project = (typeof projects)[number];

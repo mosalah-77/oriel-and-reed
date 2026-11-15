@@ -1,0 +1,214 @@
+{
+  "filters": [
+    {
+      "cards": 1,
+      "focus": "Living room",
+      "room": "Living room",
+      "titles": [
+        "Olive sitting room"
+      ],
+      "viewerOpen": false
+    },
+    {
+      "cards": 1,
+      "focus": "Bedroom",
+      "room": "Bedroom",
+      "titles": [
+        "Linen bedroom"
+      ],
+      "viewerOpen": false
+    },
+    {
+      "cards": 1,
+      "focus": "Kitchen",
+      "room": "Kitchen",
+      "titles": [
+        "Timber kitchen"
+      ],
+      "viewerOpen": false
+    },
+    {
+      "cards": 3,
+      "focus": "All rooms",
+      "room": "All rooms",
+      "titles": [
+        "Olive sitting room",
+        "Timber kitchen",
+        "Linen bedroom"
+      ],
+      "viewerOpen": false
+    }
+  ],
+  "viewports": [
+    {
+      "cards": 3,
+      "close": {
+        "bottom": 302,
+        "height": 44,
+        "left": 184.171875,
+        "right": 292,
+        "top": 258,
+        "width": 107.828125,
+        "x": 184.171875,
+        "y": 258
+      },
+      "dialog": {
+        "bottom": 601.9921875,
+        "height": 359.9921875,
+        "left": 12,
+        "right": 308,
+        "top": 242,
+        "width": 296,
+        "x": 12,
+        "y": 242
+      },
+      "focus": "Close image",
+      "height": 844,
+      "imageFit": "contain",
+      "room": "All rooms",
+      "viewerOpen": true,
+      "width": 320
+    },
+    {
+      "cards": 3,
+      "close": {
+        "bottom": 260.6640625,
+        "height": 44,
+        "left": 632.171875,
+        "right": 740,
+        "top": 216.6640625,
+        "width": 107.828125,
+        "x": 632.171875,
+        "y": 216.6640625
+      },
+      "dialog": {
+        "bottom": 823.328125,
+        "height": 622.6640625,
+        "left": 12,
+        "right": 756,
+        "top": 200.6640625,
+        "width": 744,
+        "x": 12,
+        "y": 200.6640625
+      },
+      "focus": "Close image",
+      "height": 1024,
+      "imageFit": "contain",
+      "room": "All rooms",
+      "viewerOpen": true,
+      "width": 768
+    },
+    {
+      "cards": 3,
+      "close": {
+        "bottom": 98,
+        "height": 44,
+        "left": 868.171875,
+        "right": 976,
+        "top": 54,
+        "width": 107.828125,
+        "x": 868.171875,
+        "y": 54
+      },
+      "dialog": {
+        "bottom": 738,
+        "height": 708,
+        "left": 24,
+        "right": 1000,
+        "top": 30,
+        "width": 976,
+        "x": 24,
+        "y": 30
+      },
+      "focus": "Close image",
+      "height": 768,
+      "room": "All rooms",
+      "viewerOpen": true,
+      "width": 1024
+    },
+    {
+      "cards": 3,
+      "close": {
+        "bottom": 98,
+        "height": 44,
+        "left": 1228.171875,
+        "right": 1336,
+        "top": 54,
+        "width": 107.828125,
+        "x": 1228.171875,
+        "y": 54
+      },
+      "dialog": {
+        "bottom": 870,
+        "height": 840,
+        "left": 80,
+        "right": 1360,
+        "top": 30,
+        "width": 1280,
+        "x": 80,
+        "y": 30
+      },
+      "focus": "Close image",
+      "height": 900,
+      "room": "All rooms",
+      "viewerOpen": true,
+      "width": 1440
+    },
+    {
+      "cards": 3,
+      "close": {
+        "bottom": 98,
+        "height": 44,
+        "left": 688.171875,
+        "right": 796,
+        "top": 54,
+        "width": 107.828125,
+        "x": 688.171875,
+        "y": 54
+      },
+      "dialog": {
+        "bottom": 360,
+        "height": 330,
+        "left": 24,
+        "right": 820,
+        "top": 30,
+        "width": 796,
+        "x": 24,
+        "y": 30
+      },
+      "focus": "Close image",
+      "height": 390,
+      "room": "All rooms",
+      "viewerOpen": true,
+      "width": 844
+    },
+    {
+      "cards": 1,
+      "close": {
+        "bottom": 285.46875,
+        "height": 44,
+        "left": 254.171875,
+        "right": 362,
+        "top": 241.46875,
+        "width": 107.828125,
+        "x": 254.171875,
+        "y": 241.46875
+      },
+      "dialog": {
+        "bottom": 618.53125,
+        "height": 393.0625,
+        "left": 12,
+        "right": 378,
+        "top": 225.46875,
+        "width": 366,
+        "x": 12,
+        "y": 225.46875
+      },
+      "focus": "Close image",
+      "height": 844,
+      "room": "Bedroom",
+      "viewerOpen": true,
+      "width": 390
+    }
+  ]
+}

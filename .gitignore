@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+.taste-skill/
+.superpowers/
+.local/
+.release/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.log
+coverage/

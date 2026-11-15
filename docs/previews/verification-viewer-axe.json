@@ -1,0 +1,32 @@
+[
+  {
+    "engine": {
+      "name": "axe-core",
+      "version": "4.11.4"
+    },
+    "incomplete": [
+      {
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements",
+            "target": [
+              "#image-viewer-title"
+            ]
+          },
+          {
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements",
+            "target": [
+              "figcaption"
+            ]
+          }
+        ]
+      }
+    ],
+    "path": "/projects",
+    "violations": [],
+    "width": 390
+  }
+]

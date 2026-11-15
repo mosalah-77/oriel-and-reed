@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Portfolio accessibility checks</title>
+    <style>body{font:16px/1.5 system-ui;margin:20px}button,select{font:inherit;padding:8px;margin:4px}iframe{display:block;height:900px;border:1px solid #777;margin-top:20px}pre{white-space:pre-wrap}label{margin-right:12px}</style>
+  </head>
+  <body>
+    <h1>Portfolio accessibility checks</h1>
+    <p>Local test harness. Scans rendered pages with axe-core; nothing is sent to an external service.</p>
+    <label>Page <select id="page"></select></label>
+    <label>Width <select id="width"><option>1440</option><option>1024</option><option>768</option><option>390</option><option>320</option></select></label>
+    <label>Base text size <select id="text-size"><option>100</option><option>200</option></select>%</label>
+    <button id="load" type="button">Load page</button>
+    <button id="scan" type="button">Scan current state</button>
+    <button id="all" type="button">Scan all pages</button>
+    <button id="responsive" type="button">Check responsive matrix</button>
+    <button id="text" type="button">Check text and short screens</button>
+    <p id="status" role="status">Ready.</p>
+    <details><summary>JSON report</summary><pre id="results">[]</pre></details>
+    <iframe id="page-frame" title="Page under test"></iframe>
+    <script type="module">
+      const paths = ['/', '/projects', '/studio', '/contact', '/projects/olive-room', '/projects/timber-kitchen', '/projects/linen-bedroom', '/missing-page'];
+      const page = document.querySelector('#page'), width = document.querySelector('#width'), frame = document.querySelector('iframe');
+      const status = document.querySelector('#status'), output = document.querySelector('#results');
+      for (const path of paths) page.add(new Option(path, path));
+      async function loadPage(path = page.value, viewWidth = Number(width.value), height = 900, textScale = Number(document.querySelector('#text-size').value)) {
+        page.value = path;
+        frame.style.width = `${viewWidth}px`;
+        frame.style.height = `${height}px`;
+        await new Promise(resolve => { frame.onload = resolve; frame.src = path; });
+        const doc = frame.contentDocument;
+        doc.documentElement.style.fontSize = `${textScale}%`;
+        await doc.fonts.ready;
+        await new Promise(resolve => frame.contentWindow.requestAnimationFrame(() => frame.contentWindow.requestAnimationFrame(resolve)));
+        await new Promise((resolve, reject) => {
+          const script = doc.createElement('script');
+          script.src = '/node_modules/axe-core/axe.min.js';
+          script.onload = resolve; script.onerror = () => reject(new Error('axe-core could not load.'));
+          doc.head.append(script);
+        });
+      }
+      async function scan() {
+        const result = await frame.contentWindow.axe.run(frame.contentDocument, {
+          runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa', 'best-practice'] },
+          resultTypes: ['violations', 'incomplete'],
+        });
+        const summarize = items => items.map(({ id, impact, description, nodes }) => ({ id, impact, description,
+          nodes: nodes.map(({ target, failureSummary }) => ({ target, summary: failureSummary })) }));
+        return { path: page.value, width: Number(width.value), engine: result.testEngine,
+          violations: summarize(result.violations), incomplete: summarize(result.incomplete) };
+      }
+      async function run(action) {
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => button.disabled = true);
+        status.textContent = 'Checking…';
+        try { await action(); }
+        catch (error) { status.textContent = `Check failed: ${error.message}`; }
+        finally { buttons.forEach(button => button.disabled = false); }
+      }
+      document.querySelector('#load').onclick = () => run(async () => { await loadPage(); status.textContent = 'Page loaded. Interact with it, then scan the current state.'; });
+      document.querySelector('#scan').onclick = () => run(async () => {
+        const result = await scan(); output.textContent = JSON.stringify([result], null, 2);
+        status.textContent = `Finished: ${result.violations.length} violations, ${result.incomplete.length} need manual review.`;
+      });
+      document.querySelector('#all').onclick = () => run(async () => {
+        const results = [];
+        for (const path of paths) { status.textContent = `Checking ${path}`; await loadPage(path); results.push(await scan()); }
+        output.textContent = JSON.stringify(results, null, 2);
+        status.textContent = `Finished ${results.length} pages: ${results.reduce((n, r) => n + r.violations.length, 0)} violations, ${results.reduce((n, r) => n + r.incomplete.length, 0)} need manual review.`;
+      });
+      async function checkLayouts(views) {
+        const results = [];
+        for (const [viewWidth, height, textScale = 100] of views) {
+          for (const path of paths) {
+            status.textContent = `Checking ${path} at ${viewWidth} × ${height}, text ${textScale}%`;
+            await loadPage(path, viewWidth, height, textScale);
+            const doc = frame.contentDocument;
+            doc.querySelector('.skip-link').click();
+            await new Promise(resolve => frame.contentWindow.requestAnimationFrame(() => frame.contentWindow.requestAnimationFrame(resolve)));
+            const headerBottom = doc.querySelector('.site-header').getBoundingClientRect().bottom;
+            const headingTop = doc.querySelector('h1').getBoundingClientRect().top;
+            const headingObscured = headingTop < headerBottom - 1;
+            const skipFocusedMain = doc.activeElement?.id === 'main';
+            const overflow = doc.documentElement.scrollWidth > viewWidth + 1;
+            const outside = [...doc.querySelectorAll('main *')].filter(element => {
+              const rect = element.getBoundingClientRect();
+              return rect.width && rect.height && (rect.left < -1 || rect.right > viewWidth + 1);
+            }).map(element => ({ tag: element.tagName, class: element.className }));
+            const result = { path, width: viewWidth, height, textScale, title: doc.title, overflow, outside,
+              headerBottom, headingTop, headingObscured, skipFocusedMain };
+            console.assert(!overflow && !outside.length && !headingObscured && skipFocusedMain, 'Layout or skip navigation failed', result);
+            results.push(result);
+          }
+        }
+        output.textContent = JSON.stringify(results, null, 2);
+        status.textContent = `Finished ${results.length} layouts: ${results.filter(r => r.overflow || r.outside.length).length} overflow cases, ${results.filter(r => r.headingObscured || !r.skipFocusedMain).length} skip-link cases.`;
+      }
+      document.querySelector('#responsive').onclick = () => run(() => checkLayouts([320,390,768,1024,1440].map(w => [w,900])));
+      document.querySelector('#text').onclick = () => run(() => checkLayouts([[320,844,200],[390,844,200],[768,900,200],[1024,900,200],[1440,900,200],[844,390],[320,568]]));
+    </script>
+  </body>
+</html>
