@@ -2,9 +2,15 @@
 
 The homepage and Services/About page now end with “Have a room in mind?” and a link to `/contact`. The contact page pairs a short introduction with three fields: name, email and a brief description of the space. It uses the existing type, colors and spacing, with one column on phones.
 
-## How the form works
+## Public demo
 
-The browser checks the fields before submitting. The server checks them again because browser checks can be bypassed. While the request is pending, the form is disabled. A confirmed save replaces it with a focused success heading. A failed request leaves the details in place and announces an error. The same unchanged retry reuses its request ID, so a lost response does not create another receipt.
+On the hosted portfolio, the form is labelled **Portfolio demo** and asks for fictional details. It checks the same field rules in the browser, then displays **Demo complete** and moves keyboard focus to that heading. It makes no submission request, saves no form data and books no consultation. The button says **Try the demo**.
+
+`tests/contact-demo-fixture.html` runs this mode locally with a request counter. An empty submission should focus the name error. Valid fictional details should show the demo completion message while the counter stays at zero. The fixture is excluded from the hosted build.
+
+## Local test submission
+
+On a loopback address, the form is labelled **Local demo** and its button says **Save test request**. The browser checks the fields before submitting. The server checks them again because browser checks can be bypassed. While the request is pending, the form is disabled. A confirmed save replaces it with a focused success heading. A failed request leaves the details in place and announces an error. The same unchanged retry reuses its request ID, so a lost response does not create another receipt.
 
 Success means a real local save. It does not mean an email was delivered or an appointment was booked. Use fictional details only.
 

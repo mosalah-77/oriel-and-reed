@@ -134,3 +134,11 @@
 **Verification:** all 24 tests and the build pass, including from a fresh dependency install in an isolated source copy. Desktop section movement, reversal and stable dimensions were checked, along with the static phone fallback and shared studio sections. A fresh production homepage performance check at desktop and phone sizes reported no failures, warnings, layout shifts, long tasks or broken requests. See the [finishing record](finish.md) for evidence and limits.
 
 **Learning action:** inspect the final snapshot with `git log -1 --oneline`. This action is offered, not recorded as completed. The repository includes the user's design decisions and six guided edits; the implementation, tests and finishing documentation remain AI-generated work.
+
+## Milestone 9: public hosting, November 16, 2026
+
+**User work and direction:** confirmed the Git snapshot exercise was done and requested a shareable live site with a clearly labelled demo form.
+
+**AI work:** prepared Sites static hosting, added direct page entrypoints and trailing-slash support, and made the public form a browser-only demonstration. It validates fictional details and displays an honest completion message without sending or saving them. The loopback form retains its real local test endpoint. The existing design and six guided edits are preserved.
+
+**Verification:** the new public-copy and trailing-slash checks failed before the changes and then passed. The suite now contains 26 tests. Browser checks confirmed first-error focus, completion-heading focus and zero submission attempts in the public-demo fixture. The first browser preview exposed shared Vite dependency caches returning 504 responses; the test servers now use separate caches, and deployment scratch files are excluded from the preview watcher. See [deployment notes](deployment.md) for the hosting configuration and update workflow.

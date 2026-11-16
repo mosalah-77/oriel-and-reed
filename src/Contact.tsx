@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { contactFields, contactLimits, validateContact, type ContactErrors } from './contact-validation';
 
-export default function Contact() {
+export default function Contact({ localDemo = typeof window !== 'undefined'
+  && ['127.0.0.1', 'localhost', '[::1]'].includes(window.location.hostname) }: { localDemo?: boolean }) {
   const form = useRef<HTMLFormElement>(null);
   const successHeading = useRef<HTMLHeadingElement>(null);
   const activeRequest = useRef<AbortController | null>(null);
@@ -29,6 +30,7 @@ export default function Contact() {
     setErrors(fieldErrors);
     setFailure('');
     if (Object.keys(fieldErrors).length) { setPhase('idle'); return; }
+    if (!localDemo) { setPhase('success'); return; }
 
     const payload = JSON.stringify(data);
     if (attempt.current?.payload !== payload) attempt.current = { payload, id: crypto.randomUUID() };
@@ -76,14 +78,18 @@ export default function Contact() {
         <h1 id="contact-title">Tell us about your space.</h1>
         <p>Start with the room you have in mind and what you would like to change. A few details are enough for a first conversation.</p>
         <div className="demo-note">
-          <h2>Local demo</h2>
-          <p>Use fictional details. Requests are saved on this computer for testing; email delivery is not connected.</p>
+          <h2>{localDemo ? 'Local demo' : 'Portfolio demo'}</h2>
+          <p>{localDemo
+            ? 'Use fictional details. Requests are saved on this computer for testing; email delivery is not connected.'
+            : 'Use fictional details to try the form. Nothing is sent or saved, and no consultation is booked.'}</p>
         </div>
       </div>
       {phase === 'success' ? (
         <div className="form-success">
-          <h2 ref={successHeading} tabIndex={-1}>Test request saved.</h2>
-          <p>The local test server saved your details. No email was sent and no appointment has been booked.</p>
+          <h2 ref={successHeading} tabIndex={-1}>{localDemo ? 'Test request saved.' : 'Demo complete.'}</h2>
+          <p>{localDemo
+            ? 'The local test server saved your details. No email was sent and no appointment has been booked.'
+            : 'Your example passed the form checks in this browser. Nothing was sent or saved. No appointment has been booked.'}</p>
           <a className="text-link" href="/projects">Explore the project concepts</a>
         </div>
       ) : (
@@ -94,13 +100,13 @@ export default function Contact() {
             <div className="contact-fields">
               <div className="form-field">
                 <label htmlFor="contact-name">Your name</label>
-                <input id="contact-name" name="name" autoComplete="name" required maxLength={contactLimits.nameMax}
+                <input id="contact-name" name="name" autoComplete={localDemo ? 'name' : 'off'} required maxLength={contactLimits.nameMax}
                   aria-invalid={Boolean(errors.name)} aria-describedby={errors.name ? 'name-error' : undefined} />
                 {errors.name && <p className="field-error" id="name-error">{errors.name}</p>}
               </div>
               <div className="form-field">
                 <label htmlFor="contact-email">Email</label>
-                <input id="contact-email" name="email" type="email" autoComplete="email" required maxLength={contactLimits.emailMax}
+                <input id="contact-email" name="email" type="email" autoComplete={localDemo ? 'email' : 'off'} required maxLength={contactLimits.emailMax}
                   aria-invalid={Boolean(errors.email)} aria-describedby={errors.email ? 'email-error' : undefined} />
                 {errors.email && <p className="field-error" id="email-error">{errors.email}</p>}
               </div>
@@ -112,7 +118,7 @@ export default function Contact() {
                 aria-invalid={Boolean(errors.message)} aria-describedby={`message-hint${errors.message ? ' message-error' : ''}`} />
               {errors.message && <p className="field-error" id="message-error">{errors.message}</p>}
             </div>
-            <button className="button-link" type="submit">{phase === 'pending' ? 'Saving…' : 'Save test request'}</button>
+            <button className="button-link" type="submit">{phase === 'pending' ? 'Saving…' : localDemo ? 'Save test request' : 'Try the demo'}</button>
           </fieldset>
           <p className="form-status" role="status">{phase === 'pending' ? 'Saving your request to the local test server.' : ''}</p>
           {phase === 'error' && <p className="form-failure" role="alert">{failure}</p>}

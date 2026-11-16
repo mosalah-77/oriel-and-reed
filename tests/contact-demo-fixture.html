@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Public contact demo check</title></head>
+  <body>
+    <output id="submission-attempts">Submission attempts: 0</output>
+    <main id="root"></main>
+    <script type="module">
+      import React, { StrictMode } from 'react';
+      import { createRoot } from 'react-dom/client';
+      import Contact from '/src/Contact.tsx';
+      import '/src/styles.css';
+      let attempts = 0;
+      window.fetch = async () => {
+        document.getElementById('submission-attempts').textContent = `Submission attempts: ${++attempts}`;
+        throw new Error('The browser-only demo must not make a request.');
+      };
+      createRoot(document.getElementById('root')).render(
+        React.createElement(StrictMode, null, React.createElement(Contact, { localDemo: false })));
+    </script>
+  </body>
+</html>

@@ -7,7 +7,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createServer, loadConfigFromFile } from 'vite';
 
-const loader = await createServer({ configFile: false, server: { middlewareMode: true, hmr: false, ws: false } });
+const loader = await createServer({ configFile: false, cacheDir: 'node_modules/.vite-test-loader', server: { middlewareMode: true, hmr: false, ws: false } });
 after(() => loader.close());
 const { validateContact, contactLimits } = await loader.ssrLoadModule('/src/contact-validation.ts');
 const { createContactMiddleware } = await loader.ssrLoadModule('/server/contact.ts');
@@ -141,7 +141,7 @@ test('an interrupted upload saves nothing and leaves the endpoint usable', async
 });
 
 test('private receipts cannot be read through Vite, encoded paths or raw queries', async t => {
-  const vite = await createServer({ server: { host: '127.0.0.1', port: 0, strictPort: true, hmr: false } });
+  const vite = await createServer({ cacheDir: 'node_modules/.vite-test-http', server: { host: '127.0.0.1', port: 0, strictPort: true, hmr: false } });
   await vite.listen();
   t.after(() => vite.close());
   const origin = `http://127.0.0.1:${vite.httpServer.address().port}`;

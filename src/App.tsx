@@ -319,6 +319,7 @@ function Page({ path }: { path: string }) {
 }
 
 export default function App({ path = '/' }: { path?: string }) {
+  path = path.replace(/\/+$/, '') || '/';
   const pageTitles: Record<string, string> = {
     '/': 'Interior design studio', '/projects': 'Project concepts',
     '/studio': 'Services & approach', '/contact': 'Contact',

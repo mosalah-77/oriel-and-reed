@@ -6,11 +6,13 @@ import { createServer } from 'vite';
 import { existsSync } from 'node:fs';
 
 const server = await createServer({
+  cacheDir: 'node_modules/.vite-test-pages',
   server: { middlewareMode: true, hmr: false, ws: false },
   optimizeDeps: { noDiscovery: true, include: [] },
 });
 after(() => server.close());
 const { default: App } = await server.ssrLoadModule('/src/App.tsx');
+const { default: Contact } = await server.ssrLoadModule('/src/Contact.tsx');
 const { projects } = await server.ssrLoadModule('/src/projects.ts');
 const render = (path) => renderToStaticMarkup(createElement(App, { path }));
 const concepts = [
@@ -59,7 +61,7 @@ test('home has one heading, an accessible room image and real navigation targets
   assert.doesNotMatch(html, /href="#"|href=""/);
 });
 
-test('contact has a labelled local-demo form and the closing invitation links to it', () => {
+test('contact has a labelled browser demo and the closing invitation links to it', () => {
   const html = render('/contact');
   assert.equal((html.match(/<h1\b/g) || []).length, 1);
   assert.match(html, /<form\b/);
@@ -67,14 +69,28 @@ test('contact has a labelled local-demo form and the closing invitation links to
     assert.ok(html.includes(`for="contact-${field}"`));
     assert.ok(html.includes(`id="contact-${field}"`));
   }
-  assert.match(html, /Local demo/);
-  assert.match(html, /email delivery is not connected/);
-  assert.match(html, /Save test request/);
+  assert.match(html, /Portfolio demo/);
+  assert.match(html, /Nothing is sent or saved/);
+  assert.match(html, /Try the demo/);
+  assert.doesNotMatch(html, /Save test request|Requests are saved on this computer/);
   assert.doesNotMatch(html, /This page is part of a later milestone|name="phone"|name="address"/);
   for (const path of ['/', '/studio']) {
     const page = render(path);
     assert.ok(page.indexOf('Have a room in mind?') > page.indexOf('From conversation to a plan.'));
     assert.match(page, /Have a room in mind\?[\s\S]*href="\/contact"/);
+  }
+});
+
+test('the controlled local contact mode keeps its honest storage notice', () => {
+  const html = renderToStaticMarkup(createElement(Contact, { localDemo: true }));
+  assert.match(html, /Local demo/);
+  assert.match(html, /email delivery is not connected/);
+  assert.match(html, /Save test request/);
+});
+
+test('shared page links also work with a trailing slash', () => {
+  for (const path of ['/projects', '/studio', '/contact', ...concepts.map(([slug]) => `/projects/${slug}`)]) {
+    assert.equal(render(`${path}/`), render(path));
   }
 });
 
