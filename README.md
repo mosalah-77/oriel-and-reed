@@ -76,7 +76,7 @@ The browser uses only React and React DOM as runtime dependencies. There is no r
 
 ## Authorship and learning
 
-Mohamed chose the project, set the learning goals, approved the visual direction and completed six guided edits: hero spacing, title travel, a project summary, process spacing, the brief's minimum length and a room filter label. Codex generated the implementation, tests and documentation, and ran the recorded checks. This is an **AI-assisted learning project**, not a claim of unaided authorship.
+Mohamed chose the project, set the goals, directed the visual design and made six edits by hand: hero spacing, title travel, a project summary, process spacing, the brief's minimum length and a room filter label. Codex wrote most of the implementation, tests and documentation under his direction, and ran the recorded checks. This is an **AI-assisted project**, with no claim of unaided authorship.
 
 The [learning log](docs/learning-log.md) separates those contributions. Short walkthroughs cover [motion](docs/hero-motion.md), [shared project data](docs/concept-projects.md), [services and process](docs/services-process.md), [the gallery](docs/project-gallery.md) and [the form](docs/contact.md).
 
