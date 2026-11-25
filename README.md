@@ -2,7 +2,7 @@
 
 A frontend portfolio project for a fictional interior design studio, built with React, TypeScript, Vite and plain CSS. The visitor can explore three room concepts, filter them by room, open an accessible image viewer and try a clearly labelled consultation demo.
 
-[Open the live portfolio](https://oriel-and-reed.m-elmorshedy635.chatgpt.site). The hosted form is a browser-only demo: nothing is sent or saved.
+[Open the live portfolio](https://go.mosalah-77.workers.dev/oriel). The hosted form is a browser-only demo: nothing is sent or saved.
 
 ![The Oriel & Reed homepage](docs/previews/finish-home-desktop.png)
 
